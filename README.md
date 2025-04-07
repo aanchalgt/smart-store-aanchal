@@ -92,3 +92,16 @@ py scripts/data_prep.py
 - pyspark[sql]
 - git+https://github.com/denisecase/datafun-venv-checker.git#egg=datafun_venv_checker
 
+
+## Create scripts data_scrubber.py and data_prep.py
+
+```
+    Copy file contents from starter repo provided
+---
+
+## Create tests folder and script file test_data_scrubber.py
+    Copy file contents from starter repo provided
+
+## Execute test script to confirm data_scrubber.py runs without error
+
+    python tests/test_data_scrubber.py
