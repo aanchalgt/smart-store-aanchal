@@ -91,3 +91,4 @@ py scripts/data_prep.py
 - pyspark==4.0.0.dev1
 - pyspark[sql]
 - git+https://github.com/denisecase/datafun-venv-checker.git#egg=datafun_venv_checker
+

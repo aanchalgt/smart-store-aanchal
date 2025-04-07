@@ -1,9 +1,9 @@
 productid,productname,category,unitprice,stockquantity,yearadded,supplier
-101,laptop,Electronics,793.12,84,2022,Lenovo
-102,hoodie,Clothing,39.1,75,2020,Patagonia
-103,cable,Electronics,22.76,100,2023,Anker
-104,hat,Clothing,43.1,75,2020,Columbia
-105,football,Sports,19.78,96,2021,Nike
-106,controller,Electronics,88.98,102,2022,xbox
-107,jacket,Clothing,67.02,75,2023,Patagonia
-108,protector,Electronics,12.56,125,2020,Skegen
+101,Laptop,electronics,793.12,84,2022,Lenovo
+102,Hoodie,clothing,39.1,75,2020,Patagonia
+103,Cable,electronics,22.76,100,2023,Anker
+104,Hat,clothing,43.1,75,2020,Columbia
+105,Football,sports,19.78,96,2021,Nike
+106,Controller,electronics,88.98,102,2022,Xbox
+107,Jacket,clothing,67.02,75,2023,Patagonia
+108,Protector,electronics,12.56,125,2020,Skegen

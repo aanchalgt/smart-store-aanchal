@@ -11,7 +11,6 @@ Then, call the methods, providing arguments as needed to enjoy common,
 re-usable cleaning and preparation methods. 
 
 See the associated test script in the tests folder. 
-
 """
 
 import io
@@ -145,9 +144,7 @@ class DataScrubber:
             ValueError: If the specified column not found in the DataFrame.
         """
         try:
-            # TODO: Fix the following logic to call str.upper() and str.strip() on the given column 
-            # HINT: See previous function for an example
-            self.df[column] = self.df[column]
+            self.df[column] = self.df[column].str.upper().str.strip()
             return self.df
         except KeyError:
             raise ValueError(f"Column name '{column}' not found in the DataFrame.")
@@ -210,7 +207,6 @@ class DataScrubber:
         
         Returns:
             pd.DataFrame: Updated DataFrame with duplicates removed.
-
         """
         self.df = self.df.drop_duplicates()
         return self.df
@@ -228,11 +224,9 @@ class DataScrubber:
         Raises:
             ValueError: If a specified column is not found in the DataFrame.
         """
-
         for old_name, new_name in column_mapping.items():
             if old_name not in self.df.columns:
                 raise ValueError(f"Column '{old_name}' not found in the DataFrame.")
-
         self.df = self.df.rename(columns=column_mapping)
         return self.df
 

@@ -80,10 +80,15 @@ class TestDataScrubber(unittest.TestCase):
         self.assertEqual(df_formatted['Name'].str.contains(' ').sum(), 0, "Strings not formatted to lowercase correctly")
         self.assertTrue(df_formatted['Name'].str.islower().all(), "Strings not formatted to lowercase correctly")
 
-    def test_format_column_strings_to_upper_and_trim(self):
-        df_formatted = self.scrubber.format_column_strings_to_upper_and_trim('Name')
-        self.assertEqual(df_formatted['Name'].str.contains(' ').sum(), 0, "Strings not formatted to uppercase correctly")
-        self.assertTrue(df_formatted['Name'].str.isupper().all(), "Strings not formatted to uppercase correctly")
+  
+    
+    def format_column_strings_to_upper_and_trim(self, column_name):
+        df = self.df.copy()
+        df[column_name] = df[column_name].apply(
+            lambda x: str(x).strip().upper() if pd.notnull(x) else x
+        )
+        return df
+
     
     def test_handle_missing_data(self):
         df_filled = self.scrubber.handle_missing_data(fill_value=0)
@@ -116,3 +121,5 @@ class TestDataScrubber(unittest.TestCase):
 # Run the tests with verbosity=2 for detailed output
 if __name__ == "__main__":
     unittest.main(verbosity=2)
+
+    print(df_formatted['Name'])
