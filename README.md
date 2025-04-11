@@ -97,7 +97,7 @@ py scripts/data_prep.py
 
 ```
     Copy file contents from starter repo provided
----
+
 
 ## Create tests folder and script file test_data_scrubber.py
     Copy file contents from starter repo provided
@@ -105,9 +105,9 @@ py scripts/data_prep.py
 ## Execute test script to confirm data_scrubber.py runs without error
 
     python tests/test_data_scrubber.py
+```
 
-
-#### Create data warehouse and database tables
+## Create data warehouse and database tables
 ##### The data warehouse will use a star schema consisting of two dimension tables (customer and product) and one fact table (sale).
 ```shell
 py scripts\etl_to_dw.py
