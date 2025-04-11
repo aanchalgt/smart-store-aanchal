@@ -1,4 +1,4 @@
-transactionid,saledate,customerid,productid,storeid,campaignid,saleamount,discountpercent,paymenttype
+transactionid,saledate,customerid,productid,storeid,CampaignID,saleamount,discountpercent,paymenttype
 550,2024-01-06,1008,102,404,0,39.1,0.05,Cash
 551,2024-01-06,1009,105,403,0,19.78,0.05,Cash
 552,2024-01-16,1004,107,404,0,335.1,0.05,Cash
