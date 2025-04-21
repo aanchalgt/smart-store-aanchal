@@ -115,7 +115,7 @@ py scripts\etl_to_dw.py
 ## P5. Cross-Platform Reporting with Power BI & Spark
 
 ### connecting to data warehouse and seeing tables connection
-![Alt text](smart-store-aanchal\images\image1.png)
+!(smart-store-aanchal\images\image1.png)
 
 
 ### Move to Power BI and analyze data
@@ -135,9 +135,9 @@ let
 in
     Source
 
-![Alt text](smart-store-aanchal\images\image2.png)
+!(smart-store-aanchal\images\image2.png)
 
 ```
 ### implement slicing, dicing, and drilldown techniques to analyze sales.
 
-![Alt text](smart-store-aanchal\images\image3.png)
+!(smart-store-aanchal\images\image3.png)
