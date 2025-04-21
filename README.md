@@ -18,7 +18,7 @@ python3 -m venv .venv
 ### Step 1B - Activate the Virtual Environment
 
 ```shell
-source .venv/bin/activate
+source .\.venv\scripts\activate
 ```
 
 ### Step 1C - Install Packages
@@ -112,3 +112,32 @@ py scripts/data_prep.py
 ```shell
 py scripts\etl_to_dw.py
 ```
+## P5. Cross-Platform Reporting with Power BI & Spark
+
+### connecting to data warehouse and seeing tables connection
+![Alt text](smart-store-aanchal\images\image1.png)
+
+
+### Move to Power BI and analyze data
+Here, we move to analyzing our data using SQL through PowerBI. In this example, we sum total sales per person to determine the top customers.
+
+```shell
+let
+    Source = Odbc.Query("dsn=SmartSalesDSN", 
+        "
+        SELECT c.name, SUM(s.sale_amount) AS total_spent 
+        FROM sale s 
+        JOIN customer c ON s.customer_id = c.customer_id 
+        GROUP BY c.name 
+        ORDER BY total_spent DESC
+        "
+    )
+in
+    Source
+
+![Alt text](smart-store-aanchal\images\image2.png)
+
+```
+### implement slicing, dicing, and drilldown techniques to analyze sales.
+
+![Alt text](smart-store-aanchal\images\image3.png)
