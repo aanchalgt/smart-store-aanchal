@@ -159,10 +159,10 @@ Data Warehouse : data/dw/smart_sales.db
 ### Section 4. Workflow & Logic
 -  combined the sales, product and customer data into all_data. Since the region info was in the customer data, it helped me break things down. Then, I calculated the total sales amount for each product by month and region.
 
-Tables: sales, customer, product combined to all_data
-Columns: product_id, customer_id, sale_date, sale_amount, region, product_name, category, month, month_name, quarter, Year
-Workflow: Aggregate by product name and region category, calculate total sales per month
-Output: Clustered Column chart + summary table
+- Tables: sales, customer, product combined to all_data
+- Columns: product_id, customer_id, sale_date, sale_amount, region, product_name, category, month, month_name, quarter, Year
+- Workflow: Aggregate by product name and region category, calculate total sales per month
+- Output: Clustered Column chart + summary table
 
 
 ### Section 5. Results (narrative + visualizations)
@@ -172,19 +172,19 @@ Output: Clustered Column chart + summary table
 - Cable and Hat products have low sales across most regions, suggesting they're not as popular.  
   
 ### Section 6. Suggested Business Action
-Focus marketing and inventory on Hoodies and Jackets in the South and North. Reduce stock or promotions for Cables and Hats to avoid overstock.
+- Focus marketing and inventory on Hoodies and Jackets in the South and North. Reduce stock or promotions for Cables and Hats to avoid overstock.
 - 
 ### Section 7. Challenges
 - Figuring out which visualizations to utilize
 - Properly displaying each chart with the correct features
 
 ### Section 8. Ethical Considerations
-ensuring all regions have fair access to good products, support, and deals. When boosting top-performing areas, also find ways to support underrepresented ones
+- ensuring all regions have fair access to good products, support, and deals. When boosting top-performing areas, also find ways to support underrepresented ones
 
 
 ## Git Workflow
 
-After making changes, use the following commands to commit and push updates to GitHub:
+  After making changes, use the following commands to commit and push updates to GitHub:
 
     # git add .
     # git commit -m "Update README with custom BI project details"
