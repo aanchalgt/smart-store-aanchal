@@ -187,5 +187,5 @@ ensuring all regions have fair access to good products, support, and deals. When
 After making changes, use the following commands to commit and push updates to GitHub:
 
     # git add .
-    # git commit -m "Update README with custom BI pproject details"
+    # git commit -m "Update README with custom BI project details"
     # git push
