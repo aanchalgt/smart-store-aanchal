@@ -173,7 +173,7 @@ Data Warehouse : data/dw/smart_sales.db
   
 ### Section 6. Suggested Business Action
 - Focus marketing and inventory on Hoodies and Jackets in the South and North. Reduce stock or promotions for Cables and Hats to avoid overstock.
-- 
+
 ### Section 7. Challenges
 - Figuring out which visualizations to utilize
 - Properly displaying each chart with the correct features
